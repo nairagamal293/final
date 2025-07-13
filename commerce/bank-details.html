@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل جهة التمويل - أركان</title>
+    
+    <!-- Bootstrap 5 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+       <link rel="stylesheet" href="../css/main.css"/> 
+    
+    <style>
+        :root {
+            --primary-color: #41AED9;
+            --secondary-color: #41AED9;
+            --accent-color: #e74c3c;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --text-color: #495057;
+            --border-radius: 8px;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease-in-out;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        
+        .bank-hero {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%) , center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .bank-content {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .bank-image {
+            max-height: 200px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+        
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .contact-card {
+            background-color: #f8fafc;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (same as your main page) -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <!-- Logo on the left -->
+            <a class="navbar-brand order-lg-1 me-lg-5" href="/index.html">
+                <img style="width: 100px;" src="/images/removebg.png" alt="أركان لدراسات الجدوى"> 
+            </a>
+            
+            <!-- Toggler button -->
+            <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Nav items in center -->
+            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">من نحن</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            خدماتنا
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><h6 class="dropdown-header">دراسات الجدوى</h6></li>
+                            <li><a class="dropdown-item" href="../Services/MarketingStudy.html">دراسة تسويقية</a></li>
+                            <li><a class="dropdown-item" href="../Services/DetailedStudy.html">دراسة فنية</a></li>
+                            <li><a class="dropdown-item" href="../Services/FinancialStudy.html">دراسة مالية</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">تحليل السوق</h6></li>
+                            <li><a class="dropdown-item" href="../Services/Pricing.html">تحليل سعر المنتج</a></li>
+                            <li><a class="dropdown-item" href="../Services/Stability.html">تحليل الاستقرار السعري</a></li>
+                            <li><a class="dropdown-item" href="../Services/Competitors.html">دراسة منافسين</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">خطوط انتاج</h6></li>
+                            <li><a class="dropdown-item" href="../Services/European.html">أوروبية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Chinese.html">صينية</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">خدمات متنوعة</h6></li>
+                            <li><a class="dropdown-item" href="../Services/AccountingBalance.html">مراجعة ميزانيات</a></li>
+                            <li><a class="dropdown-item" href="../Services/EstimatedBudgets.html">إعداد موازنات تقديريه</a></li>
+                            <li><a class="dropdown-item" href="../Services/FinancialStatements.html">إعداد قوائم مالية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Tax.html">حساب الضريبة والزكاة</a></li>
+                            <li><a class="dropdown-item" href="../Services/Strategy.html">خطط استراتيجية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Export.html">خطة تصديرية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Marketing.html">خطة تسويق</a></li>
+                            <li><a class="dropdown-item" href="../Services/Financing.html">حلول تمويل</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Invest.html">الفرص الاستثمارية</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../EconomicDepartments.html">الاقسام الاقتصادية</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="worldDropdown" role="button" data-bs-toggle="dropdown">
+                            عالم التجارة والصناعة
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../commerce/SupportedProjects.html">مشروعات تدعمها الدولة</a></li>
+                            <li><a class="dropdown-item" href="../commerce/MainProjects.html">اهم المشروعات</a></li>
+                            <li><a class="dropdown-item" href="../commerce/blogs.html">مقالات</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../ProfitWithUs.html">شاركنا الارباح</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Button on the right -->
+            <div class="d-flex align-items-center order-lg-4 ms-lg-3">
+                <a href="../contact.html" class="btn btn-primary">
+                    <i class="fas fa-briefcase me-1"></i> استشارة مجانية
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bank-hero" id="bank-hero">
+        <div class="container">
+            <h1 id="bank-name" class="mb-3"></h1>
+            <p id="bank-country" class="lead"></p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+   <!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <!-- Bank Info -->
+        <div class="col-lg-8">
+            <div class="bank-content">
+                <div class="text-center mb-4">
+                    <img id="bank-logo" src="" alt="Bank Logo" class="bank-image">
+                </div>
+                
+                <h3 class="mb-4">نبذة عن البنك</h3>
+                <p id="bank-description" class="mb-4"></p>
+            </div>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="col-lg-4">
+            <div class="contact-card">
+                <h4 class="mb-4">معلومات التواصل</h4>
+                <p><strong>الموقع الإلكتروني:</strong> <a id="bank-website" href="#" target="_blank"></a></p>
+                <p><strong>رقم الهاتف:</strong> <span id="bank-phone"></span></p>
+                <p><strong>البريد الإلكتروني:</strong> <span id="bank-email"></span></p>
+                <p><strong>العنوان:</strong> <span id="bank-address"></span></p>
+            </div>
+            
+            <div class="contact-card">
+                <h4 class="mb-4">هل تحتاج مساعدة؟</h4>
+                <p>فريقنا من الخبراء جاهز لمساعدتك في الحصول على التمويل المناسب لمشروعك</p>
+                <a href="../contact.html" class="btn btn-primary w-100 mt-3">
+                    <i class="fas fa-phone-alt me-2"></i> تواصل معنا الآن
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer (same as your main page) -->
+  <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">اهم الروابط</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled footer-links">
+                                <li class="mb-2"><a href="../index.html">الرئيسية</a></li>
+                                <li class="mb-2"><a href="../about.html">من نحن</a></li>
+                                <li class="mb-2"><a href="MainProjects.html">اهم المشروعات</a></li>
+                                <li class="mb-2"><a href="../Invest.html">الفرص الاستثمارية</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled footer-links">
+                                <li class="mb-2"><a href="../EconomicDepartments.html">الاقسام الاقتصادية</a></li>
+                                <li class="mb-2"><a href="../contact.html">تواصل معنا</a></li>
+                                <li class="mb-2"><a href="blogs.html">المدونة</a></li>
+                                <li class="mb-2"><a href="../ProfitWithUs.html">شاركنا الأرباح</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">أحدث المقالات</h5>
+                    
+                    <div class="mb-3">
+                        <a href="/blogs/2020/دراسة جدوى" class="d-flex text-decoration-none text-white-50">
+                            <div class="flex-grow-1 ms-3">
+                                <h6 class="text-white mb-0">مكتب أركان لدراسات الجدوى الاقتصادية المفصلة</h6>
+                                <small>5/2/2020</small>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <a href="/blogs/2020/www.arkkaan.com/blogs/2020/" class="d-flex text-decoration-none text-white-50">
+                            <div class="flex-grow-1 ms-3">
+                                <h6 class="text-white mb-0">مكتب أركان لدراسات الجدوى الاقتصادية المفصلة</h6>
+                                <small>5/2/2020</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">اتـصـل بـنـا</h5>
+                    
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                            نخدم جميع أنحاء المملكة العربية السعودية ودراسة الجدوى التي نقدمها توافي شروط البنك الدولي ومعتمدة لدى جميع جهات التمويل
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2 text-primary"></i>
+                            <a href="mailto:info@arkaan.com" class="text-white-50">info@arkaan.com</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone-alt me-2 text-primary"></i>
+                            <a href="tel:+966544902462" class="text-white-50">+966 54 490 2462</a> / 
+                            <a href="tel:+966567473356" class="text-white-50">+966 56 747 3356</a>
+                        </li>
+                    </ul>
+                    
+                    <h5 class="text-white mt-4 mb-3">طرق الدفع</h5>
+                    <div class="payment-methods">
+                        <img src="../images/visa.jpeg" alt="طريقة دفع">
+                        <img src="../images/mastercard.jpeg" alt="طريقة دفع">
+                        <img src="../images/paypal.jpeg" alt="طريقة دفع">
+                        <img src="../images/Western Union.jpeg" alt="طريقة دفع">
+                        <img src="../images/bank transfer.jpeg" alt="طريقة دفع">
+                        <img src="../images/american express.jpeg" alt="طريقة دفع">
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <a href="/index.html" class="d-inline-block">
+                        <img src="../images/011-3-removebg-.png" alt="أركان لدراسات الجدوى" height="45">
+                    </a>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex align-items-center justify-content-md-end">
+                        <p class="mb-0 me-3 text-white-50">تـابـعـونـا:</p>
+                        <div>
+                            <a href="https://www.facebook.com/companyarkan" class="social-icon me-2">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/arkancompany1?lang=ar" class="social-icon me-2">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0 text-white-50">
+                        <span id="copyright-year"></span> &copy; جميع الحقوق محفوظة لشركة أركان لدراسات الجدوى
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">شروط الخدمة</a>
+                    <a href="#" class="text-white-50">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        // Bank data - you can expand this with all your banks
+       // Bank data - all 31 banks
+const banksData = {
+    "Maison des finances": {
+        name: "دار تمويل",
+        country: "مصر",
+        logo: "../images/dareltamweel.jpeg",
+        description: "دار تمويل هي مؤسسة تمويلية رائدة في مصر تقدم حلول تمويلية مبتكرة للشركات والأفراد. نقدم مجموعة واسعة من المنتجات المصممة خصيصًا لتلبية احتياجات عملائنا.",
+        website: "https://www.example.com",
+        phone: "+20 123 456 7890",
+        email: "info@maisonfinance.com",
+        address: "القاهرة، مصر",
+        heroImage: "../images/127372.jpg"
+    },
+    "National Bank of Abu Dhabi": {
+        name: "بنك أبو ظبي الوطني",
+        country: "الإمارات العربية المتحدة",
+        logo: "../images/bank.png",
+        description: "بنك أبوظبي الوطني هو أحد أكبر البنوك في الإمارات العربية المتحدة، يقدم مجموعة شاملة من الخدمات المصرفية والتمويلية للشركات والأفراد.",
+        website: "https://www.nbad.com",
+        phone: "+971 600 522 222",
+        email: "customerservice@nbad.com",
+        address: "أبوظبي، الإمارات العربية المتحدة",
+        heroImage: "../images/127372.jpg"
+    },
+    "First Abu Dhabi Bank": {
+        name: "بنك أبوظبي الأول",
+        country: "الإمارات العربية المتحدة",
+        logo: "../images/firstbankremovebg.png",
+        description: "بنك أبوظبي الأول هو أكبر بنك في الإمارات وأحد أكبر المؤسسات المالية في المنطقة، يقدم حلولاً مصرفية وتمويلية متكاملة.",
+        website: "https://www.bankfab.com",
+        phone: "+971 600 525 252",
+        email: "customer.service@bankfab.com",
+        address: "أبوظبي، الإمارات العربية المتحدة",
+        heroImage: "../images/127372.jpg"
+    },
+    "The Islamic Bank of Dubai": {
+        name: "بنك دبي الاسلامي",
+        country: "الإمارات العربية المتحدة",
+        logo: "../images/dubaiislamicbank.png",
+        description: "بنك دبي الإسلامي هو أول بنك إسلامي في العالم وأحد أكبر المؤسسات المالية الإسلامية، يقدم حلولاً مصرفية متوافقة مع الشريعة الإسلامية.",
+        website: "https://www.dib.ae",
+        phone: "+971 600 54 0000",
+        email: "customerservice@dib.ae",
+        address: "دبي، الإمارات العربية المتحدة",
+        heroImage: "../images/127372.jpg"
+    },
+    "Bank of Fujairah": {
+        name: "بنك الفجيرة الوطني",
+        country: "الإمارات العربية المتحدة",
+        logo: "../images/bank4.png",
+        description: "بنك الفجيرة الوطني هو بنك تجاري رائد يقدم مجموعة واسعة من المنتجات والخدمات المصرفية للأفراد والشركات في الإمارات.",
+        website: "https://www.bankoffujairah.com",
+        phone: "+971 600 54 4400",
+        email: "customerservice@bankoffujairah.com",
+        address: "الفجيرة، الإمارات العربية المتحدة",
+        heroImage: "../images/127372.jpg"
+    },
+    "Emirates NBD": {
+        name: "بنك الامارات أبوظبي الوطني",
+        country: "الإمارات العربية المتحدة",
+        logo: "../images/EmiratesNBD.jpg",
+        description: "بنك الإمارات دبي الوطني هو أحد أكبر المجموعات المصرفية في المنطقة، يقدم خدمات مصرفية تجارية وتجزئة واستثمارية.",
+        website: "https://www.emiratesnbd.com",
+        phone: "+971 600 54 0000",
+        email: "customerservice@emiratesnbd.com",
+        address: "دبي، الإمارات العربية المتحدة",
+        heroImage: "../images/127372.jpg"
+    },
+    "Gulf Finance Company": {
+        name: "شركة الخليج للتمويل",
+        country: "الإمارات العربية المتحدة",
+        logo: "../images/gulfComapny.png",
+        description: "شركة الخليج للتمويل هي شركة تمويل رائدة في الإمارات تقدم حلول تمويلية متنوعة للأفراد والشركات وفقاً لأحكام الشريعة الإسلامية.",
+        website: "https://www.gulffinance.com",
+        phone: "+971 600 54 5555",
+        email: "info@gulffinance.com",
+        address: "دبي، الإمارات العربية المتحدة",
+        heroImage: "../images/127372.jpg"
+    },
+    "Al Oula for Finance": {
+        name: "الأولى للتمويل",
+        country: "الإمارات العربية المتحدة",
+        logo: "../images/FirstFinance.jpg",
+        description: "الأولى للتمويل هي شركة تمويل متخصصة في تقديم حلول تمويلية مبتكرة للسيارات والعقارات والاستثمارات المختلفة.",
+        website: "https://www.aloula.com",
+        phone: "+971 600 54 6666",
+        email: "info@aloula.com",
+        address: "أبوظبي، الإمارات العربية المتحدة",
+        heroImage: "../images/127372.jpg"
+    },
+    "Al Jazeera Finance": {
+        name: "الجزيرة للتمويل",
+        country: "الإمارات العربية المتحدة",
+        logo: "../images/AJF.png",
+        description: "الجزيرة للتمويل هي شركة تمويل إسلامية تقدم حلولاً تمويلية متكاملة وفقاً لأحكام الشريعة الإسلامية.",
+        website: "https://www.aljazeera-finance.com",
+        phone: "+971 600 54 7777",
+        email: "info@aljazeera-finance.com",
+        address: "دبي، الإمارات العربية المتحدة",
+        heroImage: "../images/127372.jpg"
+    },
+    "Investment House": {
+        name: "بيت الاستثمار",
+        country: "الإمارات العربية المتحدة",
+        logo: "../images/INVESTMENTHOUSE.jpeg",
+        description: "بيت الاستثمار هو شركة استثمارية رائدة تقدم حلولاً مالية واستثمارية متكاملة للعملاء الأفراد والمؤسسات.",
+        website: "https://www.investmenthouse.ae",
+        phone: "+971 600 54 8888",
+        email: "info@investmenthouse.ae",
+        address: "دبي، الإمارات العربية المتحدة",
+        heroImage: "../images/127372.jpg"
+    },
+    "Ammar Finance": {
+        name: "عمار",
+        country: "الإمارات العربية المتحدة",
+        logo: "../images/Amar.jpg",
+        description: "شركة عمار للتمويل والإجارة تقدم حلولاً تمويلية متكاملة وفقاً لأحكام الشريعة الإسلامية مع التركيز على التمويل الشخصي والعقاري.",
+        website: "https://www.ammarfinance.com",
+        phone: "+971 600 54 9999",
+        email: "info@ammarfinance.com",
+        address: "الشارقة، الإمارات العربية المتحدة",
+        heroImage: "../images/127372.jpg"
+    },
+    "Kafik Finance": {
+        name: "كفيك",
+        country: "الإمارات العربية المتحدة",
+        logo: "../images/kfic.jpg",
+        description: "كفيك للتمويل هي شركة تمويل متخصصة في تقديم حلول تمويلية مبتكرة وسريعة للأفراد والشركات الصغيرة.",
+        website: "https://www.kafikfinance.com",
+        phone: "+971 600 55 0000",
+        email: "info@kafikfinance.com",
+        address: "رأس الخيمة، الإمارات العربية المتحدة",
+        heroImage: "../images/127372.jpg"
+    },
+    "First Investor": {
+        name: "المستثمر الأول",
+        country: "الإمارات العربية المتحدة",
+        logo: "../images/firstInvest.png",
+        description: "المستثمر الأول هو صندوق استثماري رائد يقدم حلولاً تمويلية واستثمارية متكاملة للشركات الناشئة والمتوسطة.",
+        website: "https://www.firstinvestor.ae",
+        phone: "+971 600 55 1111",
+        email: "info@firstinvestor.ae",
+        address: "دبي، الإمارات العربية المتحدة",
+        heroImage: "../images/127372.jpg"
+    },
+    "Kuwait Finance House": {
+        name: "بيت التمويل الكويتي",
+        country: "الكويت",
+        logo: "../images/kuwait finance house.jpg",
+        description: "بيت التمويل الكويتي هو أحد أكبر البنوك الإسلامية في العالم، يقدم حلولاً مصرفية وتمويلية متوافقة مع الشريعة الإسلامية.",
+        website: "https://www.kfh.com",
+        phone: "+965 180 0080",
+        email: "info@kfh.com",
+        address: "الكويت",
+        heroImage: "../images/127372.jpg"
+    },
+    "Al Mulla Finance": {
+        name: "الملا للتمويل",
+        country: "الكويت",
+        logo: "../images/Al Mulla Finance.png",
+        description: "الملا للتمويل هي شركة تمويل رائدة في الكويت تقدم حلولاً تمويلية متنوعة للأفراد والشركات.",
+        website: "https://www.almulla-finance.com",
+        phone: "+965 180 0081",
+        email: "info@almulla-finance.com",
+        address: "الكويت",
+        heroImage: "../images/127372.jpg"
+    },
+    "Ward Trading and Distribution": {
+        name: "شركة وارد للتجارة والتوزيع",
+        country: "الكويت",
+        logo: "../images/Ward Trading.jpeg",
+        description: "شركة وارد للتجارة والتوزيع هي شركة متخصصة في تقديم حلول تمويلية وتجارية متكاملة للقطاع الخاص.",
+        website: "https://www.wardtrade.com",
+        phone: "+965 180 0082",
+        email: "info@wardtrade.com",
+        address: "الكويت",
+        heroImage: "../images/127372.jpg"
+    },
+    "Al Madina Finance and Investment": {
+        name: "شركة المدينة للتمويل والاستثمار",
+        country: "السعودية",
+        logo: "../images/Al Madina Finance.png",
+        description: "شركة المدينة للتمويل والاستثمار هي شركة سعودية متخصصة في تقديم حلول تمويلية واستثمارية متوافقة مع الشريعة الإسلامية.",
+        website: "https://www.almadina-finance.com",
+        phone: "+966 920 000 001",
+        email: "info@almadina-finance.com",
+        address: "الرياض، المملكة العربية السعودية",
+        heroImage: "../images/127372.jpg"
+    },
+    "Commercial Facilities Company": {
+        name: "شركة التسهيلات التجارية",
+        country: "السعودية",
+        logo: "../images/Commercial Facilities.jpg",
+        description: "شركة التسهيلات التجارية هي شركة تمويل سعودية تقدم حلولاً تمويلية متكاملة للشركات والأفراد.",
+        website: "https://www.cfc.com.sa",
+        phone: "+966 920 000 002",
+        email: "info@cfc.com.sa",
+        address: "جدة، المملكة العربية السعودية",
+        heroImage: "../images/127372.jpg"
+    },
+    "Dar Al Istithmar": {
+        name: "دار للاستثمار",
+        country: "السعودية",
+        logo: "../images/Dar Al Istithmar.png",
+        description: "دار للاستثمار هي شركة استثمارية سعودية متخصصة في تقديم حلول استثمارية وتمويلية متوافقة مع الشريعة الإسلامية.",
+        website: "https://www.daralistithmar.com",
+        phone: "+966 920 000 003",
+        email: "info@daralistithmar.com",
+        address: "الدمام، المملكة العربية السعودية",
+        heroImage: "../images/127372.jpg"
+    },
+    "Finance Lease": {
+        name: "تأجير التمويل",
+        country: "السعودية",
+        logo: "../images/Finance Lease.png",
+        description: "شركة تأجير التمويل هي شركة سعودية متخصصة في تقديم حلول التمويل التأجيري للشركات والأفراد.",
+        website: "https://www.financelease.com.sa",
+        phone: "+966 920 000 004",
+        email: "info@financelease.com.sa",
+        address: "الرياض، المملكة العربية السعودية",
+        heroImage: "../images/127372.jpg"
+    },
+    "Al Manar Finance": {
+        name: "المنار للتمويل",
+        country: "قطر",
+        logo: "../images/Al Manar Finance.png",
+        description: "المنار للتمويل هي شركة قطرية متخصصة في تقديم حلول تمويلية متوافقة مع الشريعة الإسلامية.",
+        website: "https://www.almanar-finance.qa",
+        phone: "+974 440 000 01",
+        email: "info@almanar-finance.qa",
+        address: "الدوحة، قطر",
+        heroImage: "../images/127372.jpg"
+    },
+    "Gulf Investment House": {
+        name: "بيت الاستثمار الخليجي",
+        country: "قطر",
+        logo: "../images/Gulf Investment House.png",
+        description: "بيت الاستثمار الخليجي هو شركة استثمارية قطرية رائدة تقدم حلولاً استثمارية وتمويلية متكاملة.",
+        website: "https://www.gih.qa",
+        phone: "+974 440 000 02",
+        email: "info@gih.qa",
+        address: "الدوحة، قطر",
+        heroImage: "../images/127372.jpg"
+    },
+    "Muscat Finance": {
+        name: "تمويل مسقط",
+        country: "سلطنة عمان",
+        logo: "../images/Muscat Finance.png",
+        description: "تمويل مسقط هي شركة تمويل عمانية رائدة تقدم حلولاً تمويلية متنوعة للأفراد والشركات.",
+        website: "https://www.muscatfinance.com",
+        phone: "+968 24 700 001",
+        email: "info@muscatfinance.com",
+        address: "مسقط، سلطنة عمان",
+        heroImage: "../images/127372.jpg"
+    },
+    "Oman Investment Foundation": {
+        name: "مؤسسة عمان للاستثمار",
+        country: "سلطنة عمان",
+        logo: "../images/Oman Investment Foundation.jpg",
+        description: "مؤسسة عمان للاستثمار هي مؤسسة حكومية تقدم الدعم والتمويل للمشاريع الاستثمارية في سلطنة عمان.",
+        website: "https://www.oif.om",
+        phone: "+968 24 700 002",
+        email: "info@oif.om",
+        address: "مسقط، سلطنة عمان",
+        heroImage: "../images/127372.jpg"
+    },
+    "Oman Arab Bank": {
+        name: "بنك عمان العربي",
+        country: "سلطنة عمان",
+        logo: "../images/Oman Arab Bank.jpeg",
+        description: "بنك عمان العربي هو أحد أبرز البنوك في سلطنة عمان، يقدم مجموعة شاملة من الخدمات المصرفية والتمويلية.",
+        website: "https://www.oman-arabbank.com",
+        phone: "+968 24 700 003",
+        email: "info@oman-arabbank.com",
+        address: "مسقط، سلطنة عمان",
+        heroImage: "../images/127372.jpg"
+    },
+    "Al Raffd Fund": {
+        name: "صندوق الرفد",
+        country: "سلطنة عمان",
+        logo: "../images/Al Raffd Fund.png",
+        description: "صندوق الرفد هو صندوق حكومي يهدف إلى دعم المشاريع الصغيرة والمتوسطة في سلطنة عمان من خلال تقديم التمويل والدعم الفني.",
+        website: "https://www.alraffd.gov.om",
+        phone: "+968 24 700 004",
+        email: "info@alraffd.gov.om",
+        address: "مسقط، سلطنة عمان",
+        heroImage: "../images/127372.jpg"
+    },
+    "Oman Development Bank": {
+        name: "بنك التنمية العماني",
+        country: "سلطنة عمان",
+        logo: "../images/Oman Development Bank.png",
+        description: "بنك التنمية العماني هو بنك حكومي يهدف إلى دعم التنمية الاقتصادية في سلطنة عمان من خلال تمويل المشاريع الصغيرة والمتوسطة.",
+        website: "https://www.odb.om",
+        phone: "+968 24 700 005",
+        email: "info@odb.om",
+        address: "مسقط، سلطنة عمان",
+        heroImage: "../images/127372.jpg"
+    },
+    "Bank Dhofar": {
+        name: "بنك ظفار",
+        country: "سلطنة عمان",
+        logo: "../images/Bank Dhofar.png",
+        description: "بنك ظفار هو أحد أبرز البنوك في سلطنة عمان، يقدم مجموعة متنوعة من الخدمات المصرفية والتمويلية للأفراد والشركات.",
+        website: "https://www.bankdhofar.com",
+        phone: "+968 24 700 006",
+        email: "info@bankdhofar.com",
+        address: "صلالة، سلطنة عمان",
+        heroImage: "../images/127372.jpg"
+    },
+    "National Bank of Oman": {
+        name: "البنك الوطني العماني",
+        country: "سلطنة عمان",
+        logo: "../images/National Bank of Oman.jpg",
+        description: "البنك الوطني العماني هو أحد أقدم البنوك في السلطنة، يقدم مجموعة شاملة من الخدمات المصرفية والتمويلية.",
+        website: "https://www.nbo.om",
+        phone: "+968 24 700 007",
+        email: "info@nbo.om",
+        address: "مسقط، سلطنة عمان",
+        heroImage: "../images/127372.jpg"
+    },
+    "Bank Nizwa": {
+        name: "بنك نزوي",
+        country: "سلطنة عمان",
+        logo: "../images/Bank Nizwa.jpg",
+        description: "بنك نزوي هو أول بنك إسلامي متكامل في سلطنة عمان، يقدم حلولاً مصرفية وتمويلية متوافقة مع الشريعة الإسلامية.",
+        website: "https://www.banknizwa.com",
+        phone: "+968 24 700 008",
+        email: "info@banknizwa.com",
+        address: "نزوى، سلطنة عمان",
+        heroImage: "../images/127372.jpg"
+    },
+    "Bank Muscat": {
+        name: "بنك مسقط",
+        country: "سلطنة عمان",
+        logo: "../images/Bank Muscat.jpg",
+        description: "بنك مسقط هو أكبر بنك في سلطنة عمان، يقدم مجموعة واسعة من الخدمات المصرفية والتمويلية للأفراد والشركات.",
+        website: "https://www.bankmuscat.com",
+        phone: "+968 24 700 009",
+        email: "info@bankmuscat.com",
+        address: "مسقط، سلطنة عمان",
+        heroImage: "../images/127372.jpg"
+    }
+};
+
+// Function to load bank data
+function loadBankData() {
+    // Get bank name from URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const bankId = urlParams.get('id');
+    
+    if (bankId && banksData[bankId]) {
+        const bank = banksData[bankId];
+        
+        // Set page title
+        document.title = `${bank.name} - أركان لدراسات الجدوى`;
+        
+        // Populate hero section
+        document.getElementById('bank-name').textContent = bank.name;
+        document.getElementById('bank-country').textContent = bank.country;
+        document.getElementById('bank-hero').style.backgroundImage = `linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%), url('${bank.heroImage}')`;
+        
+        // Populate bank info
+        document.getElementById('bank-logo').src = bank.logo;
+        document.getElementById('bank-logo').alt = bank.name;
+        document.getElementById('bank-description').textContent = bank.description;
+        
+        // Populate contact info
+        document.getElementById('bank-website').textContent = bank.website;
+        document.getElementById('bank-website').href = bank.website;
+        document.getElementById('bank-phone').textContent = bank.phone;
+        document.getElementById('bank-email').textContent = bank.email;
+        document.getElementById('bank-address').textContent = bank.address;
+    } else {
+        // Bank not found, redirect to main page
+        window.location.href = 'financing.html';
+    }
+}
+
+// Load bank data when page loads
+window.onload = loadBankData;
+    </script>
+</body>
+</html>

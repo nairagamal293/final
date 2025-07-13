@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أهم المشروعات - أركان</title>
+    
+    <!-- Bootstrap 5 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+           <link rel="stylesheet" href="../css/main.css"/> 
+
+    <style>
+         :root {
+            --primary-color: #41AED9;
+            --secondary-color: #41AED9;
+            --accent-color: #e74c3c;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --text-color: #495057;
+            --border-radius: 8px;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease-in-out;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        
+        /* Hero Section */
+        .projects-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/2148252130.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .projects-hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .projects-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            animation: fadeInDown 1s ease;
+        }
+        
+        .projects-hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+        
+        /* Projects Section */
+        .projects-section {
+            padding: 80px 0;
+            background-color: #ffffff;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            right: 0;
+            width: 80px;
+            height: 3px;
+            background: var(--primary-color);
+            animation: lineGrow 1s ease-out;
+        }
+        
+        @keyframes lineGrow {
+            from { width: 0; }
+            to { width: 80px; }
+        }
+        
+        /* Project Cards */
+        .project-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            background: white;
+            border: none;
+            height: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(65, 174, 217, 0.2);
+        }
+        
+        .project-img {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover .project-img {
+            transform: scale(1.05);
+        }
+        
+        .project-body {
+            padding: 25px;
+            position: relative;
+        }
+        
+        .project-title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+        
+        .project-text {
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+        
+        .project-badge {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+         .cta-section {
+        position: relative;
+        color: white;
+        text-align: right;
+    }
+    
+    .cta-section h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    
+    .cta-section p {
+        font-size: 1.25rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    .btn-light {
+        background-color: white;
+        color: var(--primary-color);
+        border: none;
+        font-weight: 600;
+    }
+    
+    .btn-light:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: var(--primary-color);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+        /* Filter Buttons */
+        .filter-buttons {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .filter-btn {
+            border: 2px solid var(--primary-color);
+            background: transparent;
+            color: var(--primary-color);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        /* Buttons */
+        .btn {
+            font-weight: 500;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+        
+        .btn:hover:before {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #3a9cc8;
+            border-color: #3a9cc8;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(65, 174, 217, 0.3);
+        }
+        
+        /* Animation Classes */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .delay-1 {
+            transition-delay: 0.2s;
+        }
+        
+        .delay-2 {
+            transition-delay: 0.4s;
+        }
+        
+        .delay-3 {
+            transition-delay: 0.6s;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .projects-hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .projects-hero {
+                height: 50vh;
+                min-height: 400px;
+            }
+            
+            .projects-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .projects-hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .projects-hero {
+                height: 40vh;
+                min-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/+966564879767" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation Bar (Same as about page) -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <!-- Logo on the left -->
+            <a class="navbar-brand order-lg-1 me-lg-5" href="/index.html">
+                <img style="width: 100px;" src="/images/removebg.png" alt="أركان لدراسات الجدوى"> 
+            </a>
+            
+            <!-- Toggler button -->
+            <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Nav items in center -->
+            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">من نحن</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            خدماتنا
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><h6 class="dropdown-header">دراسات الجدوى</h6></li>
+                            <li><a class="dropdown-item" href="../Services/MarketingStudy.html">دراسة تسويقية</a></li>
+                            <li><a class="dropdown-item" href="../Services/DetailedStudy.html">دراسة فنية</a></li>
+                            <li><a class="dropdown-item" href="../Services/FinancialStudy.html">دراسة مالية</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">تحليل السوق</h6></li>
+                            <li><a class="dropdown-item" href="../Services/Pricing.html">تحليل سعر المنتج</a></li>
+                            <li><a class="dropdown-item" href="../Services/Stability.html">تحليل الاستقرار السعري</a></li>
+                            <li><a class="dropdown-item" href="../Services/Competitors.html">دراسة منافسين</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">خطوط انتاج</h6></li>
+                            <li><a class="dropdown-item" href="../Services/European.html">أوروبية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Chinese.html">صينية</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">خدمات متنوعة</h6></li>
+                            <li><a class="dropdown-item" href="../Services/AccountingBalance.html">مراجعة ميزانيات</a></li>
+                            <li><a class="dropdown-item" href="../Services/EstimatedBudgets.html">إعداد موازنات تقديريه</a></li>
+                            <li><a class="dropdown-item" href="../Services/FinancialStatements.html">إعداد قوائم مالية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Tax.html">حساب الضريبة والزكاة</a></li>
+                            <li><a class="dropdown-item" href="../Services/Strategy.html">خطط استراتيجية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Export.html">خطة تصديرية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Marketing.html">خطة تسويق</a></li>
+                            <li><a class="dropdown-item" href="../Services/Financing.html">حلول تمويل</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Invest.html">الفرص الاستثمارية</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../EconomicDepartments.html">الاقسام الاقتصادية</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="worldDropdown" role="button" data-bs-toggle="dropdown">
+                            عالم التجارة والصناعة
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../commerce/SupportedProjects.html">مشروعات تدعمها الدولة</a></li>
+                            <li><a class="dropdown-item" href="../commerce/MainProjects.html">اهم المشروعات</a></li>
+                            <li><a class="dropdown-item" href="../commerce/blogs.html">مقالات</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../ProfitWithUs.html">شاركنا الارباح</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Button on the right -->
+            <div class="d-flex align-items-center order-lg-4 ms-lg-3">
+                <a href="../contact.html" class="btn btn-primary">
+                    <i class="fas fa-briefcase me-1"></i> استشارة مجانية
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="projects-hero">
+        <div class="projects-hero-content">
+            <h1 class="animate__animated animate__fadeInDown">أهم المشروعات</h1>
+            <p class="animate__animated animate__fadeInUp">اكتشف فرص استثمارية مميزة مع دراسات جدوى دقيقة واحترافية</p>
+            <div class="animate__animated animate__fadeInUp">
+                <a href="#projects" class="btn btn-primary me-2">تصفح المشروعات</a>
+                <a href="../contact.html" class="btn btn-outline-light">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center animate-on-scroll">
+                    <h2 class="section-title">مشروعات مميزة</h2>
+                    <p class="text-muted">اختر من بين مجموعة واسعة من المشروعات المدروسة بعناية</p>
+                </div>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons animate-on-scroll delay-1">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="large">مشروعات كبيرة</button>
+                <button class="filter-btn" data-filter="medium">مشروعات متوسطة</button>
+                <button class="filter-btn" data-filter="small">مشروعات صغيرة</button>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="row g-4">
+                <!-- Project 1 - Large -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="large">
+                    <div class="project-card">
+                        <img src="../images/farm.jpg" alt="مشروع مزرعة غابات" class="project-img">
+                        <div class="project-body">
+                            <span class="project-badge">كبيرة</span>
+                            <h3 class="project-title">مشروع مزرعة غابات أشجار الخشب والورق</h3>
+                            <p class="project-text">مشروع ضخم لإنشاء مزرعة غابات لأشجار الخشب والورق بالمملكة العربية السعودية باستثمار 600 مليون دولار</p>
+                            <a href="/content/The project of forest plantation of wood and paper trees in the Kingdom with an investment of $ 600 million" class="btn btn-primary w-100">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - Medium -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll delay-1" data-category="medium">
+                    <div class="project-card">
+                        <img src="../images/restaurant.jpg" alt="سلسلة مطاعم" class="project-img">
+                        <div class="project-body">
+                            <span class="project-badge">متوسطة</span>
+                            <h3 class="project-title">سلسلة مطاعم كبرى داخل المملكة</h3>
+                            <p class="project-text">مشروع إنشاء سلسلة مطاعم متكاملة الخدمات في مختلف مدن المملكة باستثمار 900 ألف دولار</p>
+                            <a href="/content/A major restaurant chain in the Kingdom with an investment of 900 thousand dollars" class="btn btn-primary w-100">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 - Medium -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll delay-2" data-category="medium">
+                    <div class="project-card">
+                        <img src="../images/coffe.jpg" alt="محمصة بن" class="project-img">
+                        <div class="project-body">
+                            <span class="project-badge">متوسطة</span>
+                            <h3 class="project-title">مشروع محمصة بن متكاملة</h3>
+                            <p class="project-text">مشروع متكامل لمحمصة بن عالية الجودة مع خط إنتاج وتوزيع باستثمار 400 ألف دولار</p>
+                            <a href="/content/The project of Banjazah investment of 400 thousand dollars" class="btn btn-primary w-100">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+   <section class="cta-section" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/maplying.jpg'); background-size: cover; background-position: center; padding: 80px 0;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 text-white animate-on-scroll">
+                <h2 class="mb-3">ما لديك مشروع خاص تريد دراسته؟</h2>
+                <p class="mb-0">تواصل معنا اليوم واحصل على دراسات جدوى مخصصة للمشروعات</p>
+            </div>
+            <div class="col-lg-4 text-lg-end animate-on-scroll delay-1">
+                <a href="contact.html" class="btn btn-light px-4">
+                    <i class="fas fa-paper-plane me-2"></i> تواصل معنا
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer (Same as about page) -->
+  <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">اهم الروابط</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled footer-links">
+                                <li class="mb-2"><a href="../index.html">الرئيسية</a></li>
+                                <li class="mb-2"><a href="../about.html">من نحن</a></li>
+                                <li class="mb-2"><a href="MainProjects.html">اهم المشروعات</a></li>
+                                <li class="mb-2"><a href="../Invest.html">الفرص الاستثمارية</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled footer-links">
+                                <li class="mb-2"><a href="../EconomicDepartments.html">الاقسام الاقتصادية</a></li>
+                                <li class="mb-2"><a href="../contact.html">تواصل معنا</a></li>
+                                <li class="mb-2"><a href="blogs.html">المدونة</a></li>
+                                <li class="mb-2"><a href="../ProfitWithUs.html">شاركنا الأرباح</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">أحدث المقالات</h5>
+                    
+                    <div class="mb-3">
+                        <a href="/blogs/2020/دراسة جدوى" class="d-flex text-decoration-none text-white-50">
+                            <div class="flex-grow-1 ms-3">
+                                <h6 class="text-white mb-0">مكتب أركان لدراسات الجدوى الاقتصادية المفصلة</h6>
+                                <small>5/2/2020</small>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <a href="/blogs/2020/www.arkkaan.com/blogs/2020/" class="d-flex text-decoration-none text-white-50">
+                            <div class="flex-grow-1 ms-3">
+                                <h6 class="text-white mb-0">مكتب أركان لدراسات الجدوى الاقتصادية المفصلة</h6>
+                                <small>5/2/2020</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">اتـصـل بـنـا</h5>
+                    
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                            نخدم جميع أنحاء المملكة العربية السعودية ودراسة الجدوى التي نقدمها توافي شروط البنك الدولي ومعتمدة لدى جميع جهات التمويل
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2 text-primary"></i>
+                            <a href="mailto:info@arkaan.com" class="text-white-50">info@arkaan.com</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone-alt me-2 text-primary"></i>
+                            <a href="tel:+966544902462" class="text-white-50">+966 54 490 2462</a> / 
+                            <a href="tel:+966567473356" class="text-white-50">+966 56 747 3356</a>
+                        </li>
+                    </ul>
+                    
+                    <h5 class="text-white mt-4 mb-3">طرق الدفع</h5>
+                    <div class="payment-methods">
+                        <img src="../images/visa.jpeg" alt="طريقة دفع">
+                        <img src="../images/mastercard.jpeg" alt="طريقة دفع">
+                        <img src="../images/paypal.jpeg" alt="طريقة دفع">
+                        <img src="../images/Western Union.jpeg" alt="طريقة دفع">
+                        <img src="../images/bank transfer.jpeg" alt="طريقة دفع">
+                        <img src="../images/american express.jpeg" alt="طريقة دفع">
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <a href="/index.html" class="d-inline-block">
+                        <img src="../images/whiteremovebg.png" alt="أركان لدراسات الجدوى" height="45">
+                    </a>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex align-items-center justify-content-md-end">
+                        <p class="mb-0 me-3 text-white-50">تـابـعـونـا:</p>
+                        <div>
+                            <a href="https://www.facebook.com/companyarkan" class="social-icon me-2">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/arkancompany1?lang=ar" class="social-icon me-2">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0 text-white-50">
+                        <span id="copyright-year"></span> &copy; جميع الحقوق محفوظة لشركة أركان لدراسات الجدوى
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">شروط الخدمة</a>
+                    <a href="#" class="text-white-50">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Filter projects
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                const projects = document.querySelectorAll('.col-md-6.col-lg-4');
+                
+                projects.forEach(project => {
+                    if (filter === 'all' || project.getAttribute('data-category') === filter) {
+                        project.style.display = 'block';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Scroll animation for elements
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animated');
+                }
+            });
+        }
+        
+        // Run animations when page loads and on scroll
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+        
+        // Set current year in copyright
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

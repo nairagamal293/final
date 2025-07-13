@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع سلسلة مطاعم كبرى داخل المملكة باستثمار 900 ألف دولار | أركان</title>
+    
+    <!-- Bootstrap 5 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="../css/main.css"/> 
+    
+    <style>
+         :root {
+            --primary-color: #41AED9;
+            --secondary-color: #41AED9;
+            --accent-color: #e74c3c;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --text-color: #495057;
+            --border-radius: 8px;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease-in-out;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        
+                
+        /* Project Content Section */
+        .project-content-section {
+            padding: 60px 0;
+        }
+        
+        .project-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .project-header {
+            margin-bottom: 40px;
+        }
+        
+        .project-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            border-right: 4px solid var(--primary-color);
+            padding-right: 15px;
+        }
+        
+        .project-meta {
+            color: #6c757d;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .project-date {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+        
+        .project-featured-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-body {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .project-body p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .project-highlights {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .highlight-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .highlight-icon {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+        
+        /* Project Details */
+        .project-details {
+            margin: 40px 0;
+        }
+        
+        .detail-card {
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .detail-card:hover {
+            box-shadow: 0 5px 15px rgba(65, 174, 217, 0.1);
+            transform: translateY(-3px);
+        }
+        
+        .detail-title {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        /* Related Projects */
+        .related-projects {
+            background-color: #f9f9f9;
+            padding: 60px 0;
+            margin-top: 60px;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 80px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+        
+        .related-project-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            background: white;
+            height: 100%;
+        }
+        
+        .related-project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(65, 174, 217, 0.15);
+        }
+        
+        .related-project-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .related-project-body {
+            padding: 20px;
+        }
+        
+        .related-project-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+        }
+        
+        .related-project-meta {
+            color: #6c757d;
+            font-size: 0.85rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/maplying.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            color: white;
+            text-align: right;
+        }
+        
+        .cta-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .cta-section p {
+            font-size: 1.25rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .btn-light {
+            background-color: white;
+            color: var(--primary-color);
+            border: none;
+            font-weight: 600;
+        }
+        
+        .btn-light:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+         /* Buttons */
+        .btn {
+            font-weight: 500;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+        
+        .btn:hover:before {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #3a9cc8;
+            border-color: #3a9cc8;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(65, 174, 217, 0.3);
+        }
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .project-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .project-title {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .project-hero {
+                height: 40vh;
+                min-height: 300px;
+            }
+            
+            .project-hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .project-featured-image {
+                height: 350px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .project-hero {
+                height: 35vh;
+                min-height: 250px;
+            }
+            
+            .project-featured-image {
+                height: 250px;
+            }
+            
+            .project-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+ <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <!-- Logo on the left -->
+            <a class="navbar-brand order-lg-1 me-lg-5" href="/index.html">
+                <img style="width: 100px;" src="/images/removebg.png" alt="أركان لدراسات الجدوى"> 
+            </a>
+            
+            <!-- Toggler button -->
+            <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Nav items in center -->
+            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">من نحن</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            خدماتنا
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><h6 class="dropdown-header">دراسات الجدوى</h6></li>
+                            <li><a class="dropdown-item" href="../Services/MarketingStudy.html">دراسة تسويقية</a></li>
+                            <li><a class="dropdown-item" href="../Services/DetailedStudy.html">دراسة فنية</a></li>
+                            <li><a class="dropdown-item" href="../Services/FinancialStudy.html">دراسة مالية</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">تحليل السوق</h6></li>
+                            <li><a class="dropdown-item" href="../Services/Pricing.html">تحليل سعر المنتج</a></li>
+                            <li><a class="dropdown-item" href="../Services/Stability.html">تحليل الاستقرار السعري</a></li>
+                            <li><a class="dropdown-item" href="../Services/Competitors.html">دراسة منافسين</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">خطوط انتاج</h6></li>
+                            <li><a class="dropdown-item" href="../Services/European.html">أوروبية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Chinese.html">صينية</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">خدمات متنوعة</h6></li>
+                            <li><a class="dropdown-item" href="../Services/AccountingBalance.html">مراجعة ميزانيات</a></li>
+                            <li><a class="dropdown-item" href="../Services/EstimatedBudgets.html">إعداد موازنات تقديريه</a></li>
+                            <li><a class="dropdown-item" href="../Services/FinancialStatements.html">إعداد قوائم مالية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Tax.html">حساب الضريبة والزكاة</a></li>
+                            <li><a class="dropdown-item" href="../Services/Strategy.html">خطط استراتيجية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Export.html">خطة تصديرية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Marketing.html">خطة تسويق</a></li>
+                            <li><a class="dropdown-item" href="../Services/Financing.html">حلول تمويل</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Invest.html">الفرص الاستثمارية</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../EconomicDepartments.html">الاقسام الاقتصادية</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="worldDropdown" role="button" data-bs-toggle="dropdown">
+                            عالم التجارة والصناعة
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../commerce/SupportedProjects.html">مشروعات تدعمها الدولة</a></li>
+                            <li><a class="dropdown-item" href="../commerce/MainProjects.html">اهم المشروعات</a></li>
+                            <li><a class="dropdown-item" href="../commerce/blogs.html">مقالات</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../ProfitWithUs.html">شاركنا الارباح</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Button on the right -->
+            <div class="d-flex align-items-center order-lg-4 ms-lg-3">
+                <a href="../contact.html" class="btn btn-primary">
+                    <i class="fas fa-briefcase me-1"></i> استشارة مجانية
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Project Content Section -->
+    <section class="project-content-section">
+        <div class="container project-container">
+            <div class="project-header">
+                <h1 class="project-title">مشروع سلسلة مطاعم كبرى داخل المملكة باستثمار 900 ألف دولار</h1>
+                <div class="project-meta">
+                    <span class="project-date"><i class="far fa-calendar-alt me-2"></i>4 أكتوبر 2019</span>
+                    <span class="mx-2">|</span>
+                    <span><i class="far fa-folder me-2"></i>مشروعات كبيرة</span>
+                </div>
+            </div>
+            
+            <img src="../images/3392.jpg" alt="مشروع سلسلة مطاعم" class="project-featured-image">
+            
+            <div class="project-body">
+                <div class="project-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle highlight-icon"></i>
+                        <div>
+                            <h3>الاستثمار المبدئي</h3>
+                            <p>900,000 دولار أمريكي</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-lightbulb highlight-icon"></i>
+                        <div>
+                            <h3>نوع المشروع</h3>
+                            <p>سلسلة مطاعم بعلامة تجارية مميزة</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-map-marker-alt highlight-icon"></i>
+                        <div>
+                            <h3>الموقع</h3>
+                            <p>المملكة العربية السعودية</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>نقدم في هذا المشروع دراسة جدوى لسلسة مطاعم كبرى تسوق نفسها بعلامة تجارية معينة ونعتمد فيها على فكرة خلق عادات استهلاكية معينة والمزيد من الطلب حول المأكولات الخاصة بالمطعم وأفكار أخرى مبتكرة وحصرية جدا داخل الدراسة بشكل متفرد جدا على مستوى العالم.</p>
+                
+                <div class="project-details">
+                    <h2>تفاصيل المشروع</h2>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="detail-card">
+                                <h3 class="detail-title"><i class="fas fa-chart-line me-2"></i>الفرصة الاستثمارية</h3>
+                                <p>تتمثل في إنشاء سلسلة مطاعم تقدم تجربة طعام فريدة بعلامة تجارية مميزة، مع التركيز على خلق عادات استهلاكية جديدة في السوق السعودي.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="detail-card">
+                                <h3 class="detail-title"><i class="fas fa-lightbulb me-2"></i>نقاط التميز</h3>
+                                <p>أفكار مبتكرة وحصرية، علامة تجارية قوية، استراتيجية تسويقية فريدة، ووصفات طعام مميزة غير متوفرة في السوق المحلي.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="detail-card">
+                                <h3 class="detail-title"><i class="fas fa-calculator me-2"></i>المؤشرات المالية</h3>
+                                <p>تحليل دقيق للتكاليف الاستثمارية، هيكل التمويل، التدفقات النقدية المتوقعة، ومعدلات العائد على الاستثمار.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="detail-card">
+                                <h3 class="detail-title"><i class="fas fa-chart-pie me-2"></i>دراسة السوق</h3>
+                                <p>تحليل شامل للسوق المستهدف، المنافسين، اتجاهات المستهلكين، وحجم الطلب المتوقع على الخدمات المقدمة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2>مميزات الدراسة</h2>
+                <ul>
+                    <li>تحليل متكامل لجميع جوانب المشروع</li>
+                    <li>دراسة جدوى مالية دقيقة مع سيناريوهات متعددة</li>
+                    <li>استراتيجية تسويقية مبتكرة</li>
+                    <li>خطط تشغيلية وتنظيمية مفصلة</li>
+                    <li>تحليل للمخاطر وخطط للتخفيف منها</li>
+                </ul>
+                
+                <div class="text-center mt-5">
+                    <a href="../contact.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-envelope me-2"></i> اطلب الدراسة الكاملة
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Related Projects Section -->
+    <section class="related-projects">
+        <div class="container">
+            <h2 class="section-title">مشاريع ذات صلة</h2>
+            
+            <div class="row">
+                <!-- Related Project 1 -->
+                <div class="col-md-4">
+                    <div class="related-project-card">
+                        <img src="../images/coffe.jpg" alt="مشروع ذات صلة" class="related-project-img">
+                        <div class="related-project-body">
+                            <h3 class="related-project-title">مشروع محمصة بن باستثمار 400 ألف دولار</h3>
+                            <p class="related-project-meta">
+                                <span class="project-date"><i class="far fa-calendar-alt me-2"></i>4 أكتوبر 2019</span>
+                            </p>
+                            <a href="/content/The project of Banjazah investment of 400 thousand dollars" class="btn btn-outline-primary btn-sm">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Project 2 -->
+                <div class="col-md-4">
+                    <div class="related-project-card">
+                        <img src="../images/project.jpg" alt="مشروع ذات صلة" class="related-project-img">
+                        <div class="related-project-body">
+                            <h3 class="related-project-title">مشروع تصنيع مواد بناء باستثمار 1.2 مليون دولار</h3>
+                            <p class="related-project-meta">
+                                <span class="project-date"><i class="far fa-calendar-alt me-2"></i>15 مارس 2020</span>
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Project 3 -->
+                <div class="col-md-4">
+                    <div class="related-project-card">
+                        <img src="../images/arkan.jpg" alt="مشروع ذات صلة" class="related-project-img">
+                        <div class="related-project-body">
+                            <h3 class="related-project-title">مشروع مركز لوجستي باستثمار 2 مليون دولار</h3>
+                            <p class="related-project-meta">
+                                <span class="project-date"><i class="far fa-calendar-alt me-2"></i>22 مايو 2020</span>
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 text-white">
+                    <h2 class="mb-3">هل ترغب في دراسة جدوى لمشروعك؟</h2>
+                    <p class="mb-0">تواصل معنا اليوم واحصل على استشارة مجانية من خبرائنا</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="../contact.html" class="btn btn-light px-4">
+                        <i class="fas fa-paper-plane me-2"></i> تواصل معنا
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">اهم الروابط</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled footer-links">
+                                <li class="mb-2"><a href="../index.html">الرئيسية</a></li>
+                                <li class="mb-2"><a href="../about.html">من نحن</a></li>
+                                <li class="mb-2"><a href="MainProjects.html">اهم المشروعات</a></li>
+                                <li class="mb-2"><a href="../Invest.html">الفرص الاستثمارية</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled footer-links">
+                                <li class="mb-2"><a href="../EconomicDepartments.html">الاقسام الاقتصادية</a></li>
+                                <li class="mb-2"><a href="../contact.html">تواصل معنا</a></li>
+                                <li class="mb-2"><a href="blogs.html">المدونة</a></li>
+                                <li class="mb-2"><a href="../ProfitWithUs.html">شاركنا الأرباح</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">أحدث المقالات</h5>
+                    
+                    <div class="mb-3">
+                        <a href="/blogs/2020/دراسة جدوى" class="d-flex text-decoration-none text-white-50">
+                            <div class="flex-grow-1 ms-3">
+                                <h6 class="text-white mb-0">مكتب أركان لدراسات الجدوى الاقتصادية المفصلة</h6>
+                                <small>5/2/2020</small>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <a href="/blogs/2020/www.arkkaan.com/blogs/2020/" class="d-flex text-decoration-none text-white-50">
+                            <div class="flex-grow-1 ms-3">
+                                <h6 class="text-white mb-0">مكتب أركان لدراسات الجدوى الاقتصادية المفصلة</h6>
+                                <small>5/2/2020</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">اتـصـل بـنـا</h5>
+                    
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                            نخدم جميع أنحاء المملكة العربية السعودية ودراسة الجدوى التي نقدمها توافي شروط البنك الدولي ومعتمدة لدى جميع جهات التمويل
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2 text-primary"></i>
+                            <a href="mailto:info@arkaan.com" class="text-white-50">info@arkaan.com</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone-alt me-2 text-primary"></i>
+                            <a href="tel:+966544902462" class="text-white-50">+966 54 490 2462</a> / 
+                            <a href="tel:+966567473356" class="text-white-50">+966 56 747 3356</a>
+                        </li>
+                    </ul>
+                    
+                    <h5 class="text-white mt-4 mb-3">طرق الدفع</h5>
+                    <div class="payment-methods">
+                        <img src="../images/visa.jpeg" alt="طريقة دفع">
+                        <img src="../images/mastercard.jpeg" alt="طريقة دفع">
+                        <img src="../images/paypal.jpeg" alt="طريقة دفع">
+                        <img src="../images/Western Union.jpeg" alt="طريقة دفع">
+                        <img src="../images/bank transfer.jpeg" alt="طريقة دفع">
+                        <img src="../images/american express.jpeg" alt="طريقة دفع">
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <a href="/index.html" class="d-inline-block">
+                        <img src="../images/whiteremovebg.png" alt="أركان لدراسات الجدوى" height="45">
+                    </a>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex align-items-center justify-content-md-end">
+                        <p class="mb-0 me-3 text-white-50">تـابـعـونـا:</p>
+                        <div>
+                            <a href="https://www.facebook.com/companyarkan" class="social-icon me-2">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/arkancompany1?lang=ar" class="social-icon me-2">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0 text-white-50">
+                        <span id="copyright-year"></span> &copy; جميع الحقوق محفوظة لشركة أركان لدراسات الجدوى
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">شروط الخدمة</a>
+                    <a href="#" class="text-white-50">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Set current year in copyright
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالات - مكتب أركان لدراسات الجدوى الاقتصادية المفصلة</title>
+    
+     <!-- Bootstrap 5 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+      <link rel="stylesheet" href="../css/main.css"/> 
+
+    
+    <style>
+        
+        :root {
+            --primary-color: #41AED9;
+            --secondary-color: #000000;
+            --accent-color: #25d366;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --text-color: #495057;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            color: var(--text-color);
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        /* Hero Section */
+        .blog-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/167088.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .blog-hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .blog-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Blog Content Section */
+        .blog-content-section {
+            padding: 60px 0;
+        }
+        
+        .blog-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .blog-header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .blog-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        
+        .blog-meta {
+            color: #6c757d;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .blog-date {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+        
+        .blog-featured-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-body {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .blog-body p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .blog-body h2, .blog-body h3 {
+            color: var(--secondary-color);
+            margin: 30px 0 20px;
+            font-weight: 600;
+        }
+        
+        .blog-body h2 {
+            font-size: 1.8rem;
+            border-right: 4px solid var(--primary-color);
+            padding-right: 15px;
+        }
+        
+        .blog-body h3 {
+            font-size: 1.5rem;
+        }
+        
+        .blog-body ul {
+            padding-right: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .blog-body li {
+            margin-bottom: 10px;
+        }
+        
+        .quote-block {
+            border-right: 3px solid var(--primary-color);
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin: 30px 0;
+            font-style: italic;
+        }
+        
+        /* Related Posts */
+        .related-posts {
+            background-color: #f9f9f9;
+            padding: 60px 0;
+            margin-top: 60px;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 80px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+        
+        .related-post-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            background: white;
+            height: 100%;
+        }
+        
+        .related-post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(65, 174, 217, 0.15);
+        }
+        
+        .related-post-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .related-post-body {
+            padding: 20px;
+        }
+        
+        .related-post-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+        }
+        
+        .related-post-meta {
+            color: #6c757d;
+            font-size: 0.85rem;
+        }
+        
+        /* Author Box */
+        .author-box {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 50px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 20px;
+        }
+        
+        .author-info h4 {
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+        
+        .social-links a {
+            color: var(--primary-color);
+            margin-left: 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* Back to Blog */
+        .back-to-blog {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+            .cta-section {
+        position: relative;
+        color: white;
+        text-align: right;
+    }
+    
+    .cta-section h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    
+    .cta-section p {
+        font-size: 1.25rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    .btn-light {
+        background-color: white;
+        color: var(--primary-color);
+        border: none;
+        font-weight: 600;
+    }
+    
+    .btn-light:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: var(--primary-color);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    /* Buttons */
+        .btn {
+            font-weight: 500;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+        
+        .btn:hover:before {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #3a9cc8;
+            border-color: #3a9cc8;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(65, 174, 217, 0.3);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .blog-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .blog-title {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .blog-hero {
+                height: 40vh;
+                min-height: 300px;
+            }
+            
+            .blog-hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .blog-featured-image {
+                height: 350px;
+            }
+            
+            .author-box {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .author-avatar {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .blog-hero {
+                height: 35vh;
+                min-height: 250px;
+            }
+            
+            .blog-featured-image {
+                height: 250px;
+            }
+            
+            .blog-title {
+                font-size: 1.5rem;
+            }
+            
+            .blog-body h2 {
+                font-size: 1.4rem;
+            }
+            
+            .blog-body h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar (Same as your blog listing page) -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <!-- Logo on the left -->
+            <a class="navbar-brand order-lg-1 me-lg-5" href="/index.html">
+                <img style="width: 100px;" src="/images/removebg.png" alt="أركان لدراسات الجدوى"> 
+            </a>
+            
+            <!-- Toggler button -->
+            <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Nav items in center -->
+            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i> الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">من نحن</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            خدماتنا
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><h6 class="dropdown-header">دراسات الجدوى</h6></li>
+                            <li><a class="dropdown-item" href="../Services/MarketingStudy.html">دراسة تسويقية</a></li>
+                            <li><a class="dropdown-item" href="../Services/DetailedStudy.html">دراسة فنية</a></li>
+                            <li><a class="dropdown-item" href="../Services/FinancialStudy.html">دراسة مالية</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">تحليل السوق</h6></li>
+                            <li><a class="dropdown-item" href="../Services/Pricing.html">تحليل سعر المنتج</a></li>
+                            <li><a class="dropdown-item" href="../Services/Stability.html">تحليل الاستقرار السعري</a></li>
+                            <li><a class="dropdown-item" href="../Services/Competitors.html">دراسة منافسين</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">خطوط انتاج</h6></li>
+                            <li><a class="dropdown-item" href="../Services/European.html">أوروبية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Chinese.html">صينية</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">خدمات متنوعة</h6></li>
+                            <li><a class="dropdown-item" href="../Services/AccountingBalance.html">مراجعة ميزانيات</a></li>
+                            <li><a class="dropdown-item" href="../Services/EstimatedBudgets.html">إعداد موازنات تقديريه</a></li>
+                            <li><a class="dropdown-item" href="../Services/FinancialStatements.html">إعداد قوائم مالية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Tax.html">حساب الضريبة والزكاة</a></li>
+                            <li><a class="dropdown-item" href="../Services/Strategy.html">خطط استراتيجية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Export.html">خطة تصديرية</a></li>
+                            <li><a class="dropdown-item" href="../Services/Marketing.html">خطة تسويق</a></li>
+                            <li><a class="dropdown-item" href="../Services/Financing.html">حلول تمويل</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Invest.html">الفرص الاستثمارية</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../EconomicDepartments.html">الاقسام الاقتصادية</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="worldDropdown" role="button" data-bs-toggle="dropdown">
+                            عالم التجارة والصناعة
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../commerce/SupportedProjects.html">مشروعات تدعمها الدولة</a></li>
+                            <li><a class="dropdown-item" href="../commerce/MainProjects.html">اهم المشروعات</a></li>
+                            <li><a class="dropdown-item" href="../commerce/blogs.html">مقالات</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../ProfitWithUs.html">شاركنا الارباح</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Button on the right -->
+            <div class="d-flex align-items-center order-lg-4 ms-lg-3">
+                <a href="../contact.html" class="btn btn-primary">
+                    <i class="fas fa-briefcase me-1"></i> استشارة مجانية
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Blog Content Section -->
+    <section class="blog-content-section">
+        <div class="container blog-container">
+            <div class="blog-header">
+                <h1 class="blog-title">دراسة الجدوى طريقك نحو مشروع مربح</h1>
+                <div class="blog-meta">
+                    <span class="blog-date"><i class="far fa-calendar-alt me-2"></i>5 فبراير 2020</span>
+                    <span class="mx-2">|</span>
+                    <span><i class="far fa-folder me-2"></i>دراسات الجدوى</span>
+                    <span class="mx-2">|</span>
+                    <span><i class="far fa-clock me-2"></i>قراءة 5 دقائق</span>
+                </div>
+            </div>
+            
+            <img src="../images/arkan.jpg" alt="دراسة الجدوى" class="blog-featured-image">
+            
+            <div class="blog-body">
+                <p>كثيراً ما يسعى العديد من المستثمرين إلي تنفيذ الكثير من المشاريع الاستثمارية ولكن يتسألون هل المشروع سيكون مربح وهل سيعود بدخل كبير ، لأن الشروع في تنفيذ مشروع تجاري جديد أو التوسع في سوق جديد أو إنتاج منتج جديد أمر قد يكون محفوف بالكثير من المخاطر خاصة في ظل التغيرات الاقتصادية الكبيرة ، لذلك يلجأ المستثمرين لإجراء دراسات الجدوى، ويعد تنفيذ دراسة جدوى إجراء مهم في تقييم تكاليف المشاريع الاستثمارية وتحديد العوائد التي سوف يجنيه المشروع وفوائدها ومخاطرها، وتساعد الدراسة في معرفة المناخ الاقتصادي للبلد التي من المفترض إقامة المشروع الاقتصادي بها ،كما تساعد في وضع خطة العمل وتحديد الفرص والعيوب واجتذاب المستثمرين وتحديد تكاليف وإيرادات العمليات المخطط إقامتها.</p>
+                
+                <h2>ما هي دراسة الجدوى؟</h2>
+                
+                <p>هي عبارة عن دراسة تقييمية وتحليلية يقوم بها أشخاص متخصصين ومؤهلين ويتم تطبيقها على فكرة جديدة لمشروع استثماري ، وذلك لتحديد التكلفة المالية للمشروع ومعدل العائد من هذا الاستثمار وتحديد نسبة المبيعات المتوقعة للمشروع وفترة استرداد رأس المال المدفوع في المشروع وفي النهاية معرفة إذا كان المشروع مُجدي اقتصادياً ويمكن تنفيذه على أرض الواقع.</p>
+                
+                <div class="quote-block">
+                    <p>تعتبر دراسة الجدوى هي حجر الزاوية في التقدم لإنشاء أي فكرة مشروع جديد وضمان النجاح في المشروع يجب الالتزام بما ينتج عن هذه الدراسة من توصيات وتعليمات.</p>
+                </div>
+                
+                <h2>أهداف دراسة الجدوى:</h2>
+                
+                <p>هناك العديد من الأهداف التي تكون مرهون تنفيذه بدراسة الجدوى للمشروع وسوف نعرض أبرز تلك الأهداف لدراسة الجدوى:</p>
+                
+                <h3>1. أهداف تنظيمية</h3>
+                <p>حيث يتم من خلال الدراسة تحديد أولويات وضروريات العمل وأساليبه وضع مجموعة من التغيرات أو التحديثات التي من الممكن للمشروع أن يفعله على أرض الواقع في المنظمة أو المؤسسة وقد يصل الأمر إلى تحديد الهيكل الإداري للمشروع.</p>
+                
+                <h3>2. أهداف فنية أو تقنية</h3>
+                <p>حيث يتم من خلال الدراسة تحديد ما يحتاجه المشروع من معدات وأجهزة ووسائل تقنية جديدة ، بالإضافة إلي إمكانية تحديد الحاجة إلى تطوير طرق التشغيل والاجهزة الموجودة مسبقاً في المنظمة ، وتساعد الدراسة رواد الأعمال في توفير العديد من الشركات التي تنتج خطوط الإنتاج في العالم وايصالها بهم.</p>
+                
+                <h3>3. أهداف اقتصادية</h3>
+                <p>يعتبر التخطيط الاقتصادي لأي مشروع استثماري أحد أهم الأساليب التي من الممكن إتباعها لتحقيق نجاح المشروع.</p>
+                
+                <h2>عناصر دراسة الجدوى الاقتصادية</h2>
+                
+                <p>يعتمد تحليل الجدوى الاقتصادية العديد من الخطوات ولكن يتم تقسيمها إلى مرحلتين أساسيتين وكل مرحلة توجد بها مجموعة من العناصر وسوف نوضحها كما يلي:</p>
+                
+                <h3>الدراسة الأولية</h3>
+                <p>وهي عبارة عن وثيقة مبسطة عن بيانات المشروع لكي تساعد على قبول فكرة المشروع أم رفضه ، في حالة قبول المشروع يتم تنفيذ الدراسة الشاملة.</p>
+                
+                <h3>الدراسة التفصيلية</h3>
+                <p>وهي عبارة عن النتائج الأولية التي تستخلص من الدراسة الأولي ، بالإضافة إلي بعض التفاصيل التي تتعلق بالمشروع ويتم تقسيمه إلي عناصر وهي:</p>
+                
+                <ul>
+                    <li><strong>دراسة الجدوى الفنية أو التقنية:</strong> وهي الدراسة التي تحدد العديد من العناصر الأساسية في المشروع مثل دراسة واختيار موقع تنفيذ المشروع، تخطيط ورسم العملية الإنتاجية ، واختيار طريقة الإنتاج ، بالإضافة إلى تحديد حاجة المشروع من ماكينات ومعدات بالإضافة إلي الخامات الأولية وتكاليف المشروع بالكامل.</li>
+                    <li><strong>دراسة الجدوى التسويقية:</strong> وهي التي تحدد معدل الطلب على السلع وهي تعد الأساس للدراسة الفنية وأي خطأ فيها سيؤدي إلي أخطاء مستمرة في الدراسة.</li>
+                    <li><strong>الدراسة المالية:</strong> ويتم ذلك عن طريق البحث عن الموارد المالية المحددة للمشروع والتكاليف.</li>
+                </ul>
+                
+                <!-- Author Box -->
+                <div class="author-box">
+                    <img src="../images/download21.jpeg" alt="كاتب المقال" class="author-avatar">
+                    <div class="author-info">
+                        <h4>أحمد محمد</h4>
+                        <p>خبير دراسات جدوى اقتصادية مع أكثر من 10 سنوات خبرة</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="back-to-blog">
+                    <a href="blogs.html" class="btn btn-primary">
+                        <i class="fas fa-arrow-right me-2"></i> العودة إلى المدونة
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Related Posts Section -->
+    <section class="related-posts">
+        <div class="container">
+            <h2 class="section-title">مقالات ذات صلة</h2>
+            
+            <div class="row">
+                <!-- Related Post 1 -->
+                <div class="col-md-4">
+                    <div class="related-post-card">
+                        <img src="../images/project.jpg" alt="مقالة ذات صلة" class="related-post-img">
+                        <div class="related-post-body">
+                            <h3 class="related-post-title">كيف تبدأ مشروعك؟</h3>
+                            <p class="related-post-meta">
+                                <span class="blog-date"><i class="far fa-calendar-alt me-2"></i>5 فبراير 2020</span>
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Post 2 -->
+                <div class="col-md-4">
+                    <div class="related-post-card">
+                        <img src="../images/national day.jpg" alt="مقالة ذات صلة" class="related-post-img">
+                        <div class="related-post-body">
+                            <h3 class="related-post-title">مكتب أركان لدراسات الجدوى الاقتصادية المفصلة</h3>
+                            <p class="related-post-meta">
+                                <span class="blog-date"><i class="far fa-calendar-alt me-2"></i>23 سبتمبر 2019</span>
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Post 3 -->
+                <div class="col-md-4">
+                    <div class="related-post-card">
+                        <img src="../images/arkan.jpg" alt="مقالة ذات صلة" class="related-post-img">
+                        <div class="related-post-body">
+                            <h3 class="related-post-title">مراحل عمل دراسة جدوى مشروع استثماري</h3>
+                            <p class="related-post-meta">
+                                <span class="blog-date"><i class="far fa-calendar-alt me-2"></i>4 أبريل 2019</span>
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+   <!-- CTA Section -->
+<section class="cta-section" style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/maplying.jpg'); background-size: cover; background-position: center; padding: 80px 0; position: relative; z-index: 1;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 text-white"> <!-- Removed animate-on-scroll class for testing -->
+                <h2 class="mb-3" style="color: white !important;">هل لديك استفسار عن دراسات الجدوى؟</h2>
+                <p class="mb-0" style="color: white !important;">تواصل معنا اليوم واحصل على استشارة مجانية من خبرائنا</p>
+            </div>
+            <div class="col-lg-4 text-lg-end"> <!-- Removed animate-on-scroll class for testing -->
+                <a href="contact.html" class="btn btn-light px-4">
+                    <i class="fas fa-paper-plane me-2"></i> تواصل معنا
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+  <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">اهم الروابط</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled footer-links">
+                                <li class="mb-2"><a href="../index.html">الرئيسية</a></li>
+                                <li class="mb-2"><a href="../about.html">من نحن</a></li>
+                                <li class="mb-2"><a href="MainProjects.html">اهم المشروعات</a></li>
+                                <li class="mb-2"><a href="../Invest.html">الفرص الاستثمارية</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled footer-links">
+                                <li class="mb-2"><a href="../EconomicDepartments.html">الاقسام الاقتصادية</a></li>
+                                <li class="mb-2"><a href="../contact.html">تواصل معنا</a></li>
+                                <li class="mb-2"><a href="blogs.html">المدونة</a></li>
+                                <li class="mb-2"><a href="../ProfitWithUs.html">شاركنا الأرباح</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">أحدث المقالات</h5>
+                    
+                    <div class="mb-3">
+                        <a href="/blogs/2020/دراسة جدوى" class="d-flex text-decoration-none text-white-50">
+                            <div class="flex-grow-1 ms-3">
+                                <h6 class="text-white mb-0">مكتب أركان لدراسات الجدوى الاقتصادية المفصلة</h6>
+                                <small>5/2/2020</small>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <a href="/blogs/2020/www.arkkaan.com/blogs/2020/" class="d-flex text-decoration-none text-white-50">
+                            <div class="flex-grow-1 ms-3">
+                                <h6 class="text-white mb-0">مكتب أركان لدراسات الجدوى الاقتصادية المفصلة</h6>
+                                <small>5/2/2020</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">اتـصـل بـنـا</h5>
+                    
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                            نخدم جميع أنحاء المملكة العربية السعودية ودراسة الجدوى التي نقدمها توافي شروط البنك الدولي ومعتمدة لدى جميع جهات التمويل
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2 text-primary"></i>
+                            <a href="mailto:info@arkaan.com" class="text-white-50">info@arkaan.com</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone-alt me-2 text-primary"></i>
+                            <a href="tel:+966544902462" class="text-white-50">+966 54 490 2462</a> / 
+                            <a href="tel:+966567473356" class="text-white-50">+966 56 747 3356</a>
+                        </li>
+                    </ul>
+                    
+                    <h5 class="text-white mt-4 mb-3">طرق الدفع</h5>
+                    <div class="payment-methods">
+                        <img src="../images/visa.jpeg" alt="طريقة دفع">
+                        <img src="../images/mastercard.jpeg" alt="طريقة دفع">
+                        <img src="../images/paypal.jpeg" alt="طريقة دفع">
+                        <img src="../images/Western Union.jpeg" alt="طريقة دفع">
+                        <img src="../images/bank transfer.jpeg" alt="طريقة دفع">
+                        <img src="../images/american express.jpeg" alt="طريقة دفع">
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <a href="/index.html" class="d-inline-block">
+                        <img src="../images/whiteremovebg.png" alt="أركان لدراسات الجدوى" height="45">
+                    </a>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex align-items-center justify-content-md-end">
+                        <p class="mb-0 me-3 text-white-50">تـابـعـونـا:</p>
+                        <div>
+                            <a href="https://www.facebook.com/companyarkan" class="social-icon me-2">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/arkancompany1?lang=ar" class="social-icon me-2">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0 text-white-50">
+                        <span id="copyright-year"></span> &copy; جميع الحقوق محفوظة لشركة أركان لدراسات الجدوى
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">شروط الخدمة</a>
+                    <a href="#" class="text-white-50">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+ <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Set current year in copyright
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
