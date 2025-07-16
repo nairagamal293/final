@@ -17,17 +17,16 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/main.css">
-     <link rel="stylesheet" href="css/contact.css">
-
-   
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
+    <!-- WhatsApp Float Button -->
     <!-- WhatsApp Float Button -->
     <a href="https://wa.me/+966564879767" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Navigation Bar (Same as About Page) -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
             <!-- Logo on the left -->
@@ -51,7 +50,7 @@
                         <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> الرئيسية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">من نحن</a>
+                        <a class="nav-link active" href="about.html">من نحن</a>
                     </li>
                     
                     <li class="nav-item dropdown">
@@ -112,7 +111,7 @@
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">تواصل معنا</a>
+                        <a class="nav-link" href="contact.html">تواصل معنا</a>
                     </li>
                 </ul>
             </div>
@@ -126,105 +125,143 @@
         </div>
     </nav>
 
+    <!-- Navigation Bar (Same as About Page) -->
+    <!-- Your existing navbar code here -->
+
     <!-- Hero Section -->
     <section class="contact-hero">
-        <div class="contact-hero-content">
-            <h1 class="animate__animated animate__fadeInDown">تواصل معنا</h1>
-            <p class="animate__animated animate__fadeInUp">نحن هنا للإجابة على جميع استفساراتك وتقديم الدعم الذي تحتاجه</p>
-            <div class="animate__animated animate__fadeInUp">
-                <a href="#contact" class="btn btn-primary me-2">أرسل رسالة</a>
-                <a href="#branches" class="btn btn-outline-light">فروعنا</a>
+        <div class="container">
+            <div class="row align-items-center min-vh-50 py-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown">تواصل معانا</h1>
+                    <p class="lead mb-5 animate__animated animate__fadeInUp">نحن هنا لمساعدتك في كل استفساراتك ومشاريعك الاستثمارية</p>
+                    <div class="d-flex justify-content-center gap-3 animate__animated animate__fadeInUp">
+                        <a href="#contact-form" class="btn btn-primary btn-lg px-4">
+                            <i class="fas fa-paper-plane me-2"></i> أرسل رسالة
+                        </a>
+                        <a href="#branches" class="btn btn-outline-light btn-lg px-4">
+                            <i class="fas fa-map-marker-alt me-2"></i> فروعنا
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact-form" class="py-5 bg-light">
         <div class="container">
             <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 text-center animate-on-scroll">
-                    <h2 class="section-title">تواصل مع فريق أركان</h2>
-                    <p class="text-muted">املأ النموذج وسنرد عليك في أسرع وقت ممكن</p>
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">تواصل مع فريق أركان</h2>
+                    <p class="text-muted">املأ النموذج وسنرد عليك خلال 24 ساعة عمل</p>
+                    <div class="divider mx-auto bg-primary"></div>
                 </div>
             </div>
             
-            <div class="row g-4">
-                <div class="col-lg-7 animate-on-scroll">
-                    <div class="contact-form">
-                        <form id="contactForm" method="post" action="#">
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <label for="name" class="form-label">الاسم الكامل</label>
-                                    <input type="text" class="form-control" id="name" name="name" required>
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+                        <div class="card-body p-5">
+                            <form id="contactForm" method="post" action="#">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label fw-bold">الاسم الكامل</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fas fa-user text-primary"></i></span>
+                                            <input type="text" class="form-control border-start-0" id="name" name="name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label fw-bold">البريد الإلكتروني</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fas fa-envelope text-primary"></i></span>
+                                            <input type="email" class="form-control border-start-0" id="email" name="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label fw-bold">رقم الهاتف</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fas fa-phone text-primary"></i></span>
+                                            <input type="tel" class="form-control border-start-0" id="phone" name="phone" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="subject" class="form-label fw-bold">نوع الاستفسار</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fas fa-list text-primary"></i></span>
+                                            <select class="form-select border-start-0" id="subject" name="subject" required>
+                                                <option value="" selected disabled>اختر نوع الاستفسار</option>
+                                                <option value="استشارة مجانية">استشارة مجانية</option>
+                                                <option value="طلب دراسة جدوى">طلب دراسة جدوى</option>
+                                                <option value="شكوى أو اقتراح">شكوى أو اقتراح</option>
+                                                <option value="شراكة في الأرباح">شراكة في الأرباح</option>
+                                                <option value="استفسار عام">استفسار عام</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label fw-bold">الرسالة</label>
+                                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div id="recaptcha" class="mb-3"></div>
+                                        <button type="submit" class="btn btn-primary w-100 py-3" id="submitBtn" disabled>
+                                            <i class="fas fa-paper-plane me-2"></i> إرسال الرسالة
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="col-md-6 mb-4">
-                                    <label for="email" class="form-label">البريد الإلكتروني</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <label for="phone" class="form-label">رقم الهاتف</label>
-                                    <input type="tel" class="form-control" id="phone" name="phone" required>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <label for="subject" class="form-label">نوع الاستفسار</label>
-                                    <select class="form-select" id="subject" name="subject" required>
-                                        <option value="" selected disabled>اختر نوع الاستفسار</option>
-                                        <option value="استشارة مجانية">استشارة مجانية</option>
-                                        <option value="طلب دراسة جدوى">طلب دراسة جدوى</option>
-                                        <option value="شكوى أو اقتراح">شكوى أو اقتراح</option>
-                                        <option value="شراكة في الأرباح">شراكة في الأرباح</option>
-                                        <option value="استفسار عام">استفسار عام</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-4">
-                                <label for="message" class="form-label">الرسالة</label>
-                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            
-                            <div class="mb-4">
-                                <div id="recaptcha"></div>
-                            </div>
-                            
-                            <div class="d-flex justify-content-between">
-                                <button type="submit" class="btn btn-primary px-4" id="submitBtn" disabled>
-                                    <i class="fas fa-paper-plane me-2"></i> إرسال الرسالة
-                                </button>
-                                <button type="reset" class="btn btn-outline-secondary px-4">
-                                    <i class="fas fa-eraser me-2"></i> مسح النموذج
-                                </button>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-5 animate-on-scroll delay-1">
-                    <div class="contact-info-box">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+                <div class="col-lg-5">
+                    <div class="contact-info-card h-100 p-4 rounded-3">
+                        <h3 class="mb-4 fw-bold">معلومات التواصل</h3>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-primary-light">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="fw-bold mb-2">الفرع الرئيسي</h5>
+                                <p class="text-muted mb-0">نخدم جميع أنحاء المملكة العربية السعودية</p>
+                            </div>
                         </div>
-                        <h4>الفرع الرئيسي</h4>
-                        <p class="mb-4">نخدم جميع أنحاء المملكة العربية السعودية ودراسة الجدوى التي نقدمها توافي شروط البنك الدولي ومعتمدة لدى جميع جهات التمويل</p>
-                        <a href="#" class="text-decoration-none d-block mb-3">
-                            <i class="fas fa-phone-alt me-2"></i> +966 54 490 2462 / +966 56 747 3356
-                        </a>
-                        <a href="mailto:info@mbscan.com" class="text-decoration-none d-block mb-3">
-                            <i class="fas fa-envelope me-2"></i> info@mbscan.com
-                        </a>
-                    </div>
-                    
-                    <div class="contact-info-box mt-4" style="padding-right: 80px;">
-                        <div class="contact-icon">
-                            <i class="fas fa-building"></i>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-primary-light">
+                                <i class="fas fa-phone-alt text-primary"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="fw-bold mb-2">اتصل بنا</h5>
+                                <p class="text-muted mb-1">+966 54 490 2462</p>
+                                <p class="text-muted mb-0">+966 56 747 3356</p>
+                            </div>
                         </div>
-                        <h4>ساعات العمل</h4>
-                        <p class="mb-2"><strong>الأحد - الخميس:</strong> 8:00 ص - 5:00 م</p>
-                        <p class="mb-2"><strong>الجمعة:</strong> مغلق</p>
-                        <p><strong>السبت:</strong> 10:00 ص - 4:00 م</p>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-primary-light">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="fw-bold mb-2">البريد الإلكتروني</h5>
+                                <p class="text-muted mb-0">info@arkkaan.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <div class="icon-box bg-primary-light">
+                                <i class="fas fa-clock text-primary"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="fw-bold mb-2">ساعات العمل</h5>
+                                <p class="text-muted mb-1">الأحد - الخميس: 8:00 ص - 5:00 م</p>
+                                <p class="text-muted mb-1">السبت: 10:00 ص - 4:00 م</p>
+                                <p class="text-muted mb-0">الجمعة: مغلق</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,97 +269,96 @@
     </section>
 
     <!-- Branches Section -->
-  <!-- Branches Section -->
-<section id="branches" class="py-5">
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-lg-8 text-center animate-on-scroll">
-                <h2 class="section-title">فروعنا</h2>
-                <p class="text-muted">نقدم خدماتنا في جميع أنحاء المملكة العربية السعودية</p>
-            </div>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-md-6 animate-on-scroll">
-                <div class="contact-info-box h-100">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h4 class="mb-3">الفرع الرئيسي</h4>
-                    <div class="branch-info">
-                        <div class="d-flex align-items-start mb-3">
-                            <i class="fas fa-map-marker-alt mt-1 me-3 text-primary"></i>
-                            <p class="mb-0">نخدم جميع أنحاء المملكة العربية السعودية ودراسة الجدوى التي نقدمها توافي شروط البنك الدولي ومعتمدة لدى جميع جهات التمويل</p>
-                        </div>
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-phone-alt me-3 text-primary"></i>
-                            <span>+966 54 490 2462</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-phone-alt me-3 text-primary"></i>
-                            <span>+966 56 747 3356</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-envelope me-3 text-primary"></i>
-                            <span>info@mbscan.com</span>
-                        </div>
-                    </div>
+    <section id="branches" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">فروعنا</h2>
+                    <p class="text-muted">نقدم خدماتنا في جميع أنحاء المملكة العربية السعودية</p>
+                    <div class="divider mx-auto bg-primary"></div>
                 </div>
             </div>
             
-            <div class="col-md-6 animate-on-scroll delay-1" style="width: 600px;">
-                <div class="contact-info-box h-100">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h4 class="mb-3">فرع الرياض</h4>
-                    <div class="branch-info">
-                        <div class="d-flex align-items-start mb-3">
-                            <i class="fas fa-map-marker-alt mt-1 me-3 text-primary"></i>
-                            <p class="mb-0">دراسة الجدوى التي نقدمها توافي شروط البنك الدولي ومعتمدة لدى جميع جهات التمويل</p>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="branch-card h-100 p-4 rounded-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box-lg bg-primary-light me-3">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">الفرع الرئيسي</h4>
+                        </div>
+                        <p class="text-muted mb-4">نخدم جميع أنحاء المملكة العربية السعودية ودراسة الجدوى التي نقدمها توافي شروط البنك الدولي ومعتمدة لدى جميع جهات التمويل</p>
+                        
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-phone-alt text-primary me-2"></i>
+                            <span>+966 54 490 2462</span>
                         </div>
                         <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-phone-alt me-3 text-primary"></i>
+                            <i class="fas fa-phone-alt text-primary me-2"></i>
                             <span>+966 56 747 3356</span>
                         </div>
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-envelope me-3 text-primary"></i>
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <span>info@arkkaan.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="branch-card h-100 p-4 rounded-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box-lg bg-primary-light me-3">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">فرع الرياض</h4>
+                        </div>
+                        <p class="text-muted mb-4">دراسة الجدوى التي نقدمها توافي شروط البنك الدولي ومعتمدة لدى جميع جهات التمويل</p>
+                        
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-phone-alt text-primary me-2"></i>
+                            <span>+966 56 747 3356</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-2"></i>
                             <span>riyadh@mbscan.com</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Map Section -->
-    <section class="map-section">
+    <section class="py-5 bg-light">
         <div class="container">
             <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 text-center animate-on-scroll">
-                    <h2 class="section-title">موقعنا على الخريطة</h2>
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">موقعنا على الخريطة</h2>
                     <p class="text-muted">يمكنك تحديد موقع أقرب فرع لك وزيارتنا</p>
+                    <div class="divider mx-auto bg-primary"></div>
                 </div>
             </div>
             
-            <div class="animate-on-scroll delay-1">
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.434818421298!2d46.67541531500281!3d24.83180098407585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee3a9ae9a0a1d%3A0x4dd23f5f7a1c3b1d!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1623456789012!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="row">
+                <div class="col-12">
+                    <div class="map-container rounded-3 overflow-hidden shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.434818421298!2d46.67541531500281!3d24.83180098407585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee3a9ae9a0a1d%3A0x4dd23f5f7a1c3b1d!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1623456789012!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section" style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/maplying.jpg'); background-size: cover; background-position: center; padding: 80px 0; position: relative; z-index: 1;">
+      <!-- CTA Section -->
+   <section class="cta-section" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/maplying.jpg'); background-size: cover; background-position: center; padding: 80px 0;">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-8 text-white"> <!-- Removed animate-on-scroll class for testing -->
-                <h2 class="mb-3" style="color: white !important;">هل لديك استفسار أو تحتاج إلى استشارة؟</h2>
-                <p class="mb-0" style="color: white !important;">تواصل معنا اليوم واحصل على استشارة مجانية من خبرائنا</p>
+            <div class="col-lg-8 text-white animate-on-scroll">
+                <h2 class="mb-3">هل أنت مستعد لبدء مشروعك الاستثماري؟</h2>
+                <p class="mb-0">تواصل معنا اليوم واحصل على استشارة مجانية من خبرائنا</p>
             </div>
-            <div class="col-lg-4 text-lg-end"> <!-- Removed animate-on-scroll class for testing -->
+            <div class="col-lg-4 text-lg-end animate-on-scroll delay-1">
                 <a href="contact.html" class="btn btn-light px-4">
                     <i class="fas fa-paper-plane me-2"></i> تواصل معنا
                 </a>
@@ -332,6 +368,7 @@
 </section>
 
     <!-- Footer (Same as About Page) -->
+    <!-- Your existing footer code here -->
  <footer class="py-5 bg-dark text-white">
         <div class="container">
             <div class="row g-4">
@@ -450,6 +487,8 @@
         </div>
     </footer>
 
+
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -466,24 +505,6 @@
             }
         });
 
-        // Scroll animation for elements
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.animate-on-scroll');
-            
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.2;
-                
-                if (elementPosition < screenPosition) {
-                    element.classList.add('animated');
-                }
-            });
-        }
-        
-        // Run animations when page loads and on scroll
-        window.addEventListener('load', animateOnScroll);
-        window.addEventListener('scroll', animateOnScroll);
-        
         // Set current year in copyright
         document.getElementById('copyright-year').textContent = new Date().getFullYear();
         
@@ -515,6 +536,23 @@
             grecaptcha.reset();
             $('#submitBtn').prop('disabled', true);
         });
+
+        // Animate elements on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animated');
+                }
+            });
+        }
+        
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
     </script>
 </body>
 </html>
